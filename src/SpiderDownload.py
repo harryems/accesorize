@@ -34,7 +34,7 @@ class Downloader(threading.Thread):
     def downloadFile(self, url,code,description):
         try:
             wp_url = "http://127.0.0.1/accesorize/xmlrpc.php"
-            wp_username = "carlos.espinosa"
+            wp_username = "carlos.espinosa" 
             wp_password = "@#5M0k137"
             wp_blogid = ""            
             socket.setdefaulttimeout(20)
