@@ -1,3 +1,0 @@
-from SpiderDownload import *
-
-main()
