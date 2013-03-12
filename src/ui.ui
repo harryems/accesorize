@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTest">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionMore_tes"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuCatalogo">
+    <property name="title">
+     <string>Catalogo</string>
+    </property>
+    <addaction name="actionCargar_Catalogo"/>
+   </widget>
+   <widget class="QMenu" name="menuConfiguracion">
+    <property name="title">
+     <string>Configuracion</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCaptura">
+    <property name="title">
+     <string>Captura</string>
+    </property>
+    <addaction name="actionCaptura_de_articulos"/>
+   </widget>
+   <addaction name="menuTest"/>
+   <addaction name="menuCatalogo"/>
+   <addaction name="menuCaptura"/>
+   <addaction name="menuConfiguracion"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMore_tes">
+   <property name="text">
+    <string>Abrir Sesion</string>
+   </property>
+  </action>
+  <action name="actionCargar_Catalogo">
+   <property name="text">
+    <string>Cargar Catalogo</string>
+   </property>
+  </action>
+  <action name="actionCaptura_de_articulos">
+   <property name="text">
+    <string>Captura de articulos</string>
+   </property>
+  </action>
+  <action name="actionCargar_Catalogo_2">
+   <property name="text">
+    <string>Cargar Catalogo</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionCargar_Catalogo</sender>
+   <signal>changed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMore_tes</sender>
+   <signal>changed()</signal>
+   <receiver>centralwidget</receiver>
+   <slot>deleteLater()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
